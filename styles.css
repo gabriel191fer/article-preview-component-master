@@ -1,0 +1,139 @@
+body{
+    font-family: 'Manrope'; font-size: 15px;
+    color: #4E5765;
+    background-color: #E9FAFC;
+}
+
+section{
+    height: 98vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-container{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50vw;
+    max-height: 33vh;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#drawers{
+    height: 33vh;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}
+
+#avatar{
+    height: 6vh;
+    border-radius: 6vh;
+}
+
+#author-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 6vh;
+    align-items: center;
+    width: auto;
+}
+#author-text{
+    display: flex;
+    height: 6vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+#text-div{
+    padding: 25px;
+}
+
+.attribution{
+    align-self: flex-end;
+}
+
+#share-icon-div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+
+}
+
+#share-icon{
+    height: 2vh;
+    cursor: pointer;
+}
+
+#left-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#right-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-left: 240px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
